@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скидка</title>
+    <link rel="stylesheet" href="game.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imgs/favicon.png">
+</head>
+<body>
+    <header>
+        <!-- -->
+        <!--Шапка-->
+        <section class="top-nav">
+        <div class="wrap-logo">
+            <img id="logo" width="160px" src="imgs/favicon.png">
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+            <ul class="menu">
+            <li><a href="main.html">О нас</a></li>
+            <li><a href="order.html">Сделать заказ</a></li>
+            <li><a href="tastes.html">Наши вкусы</a></li>
+            <li><a href="history.html">История мороженого</a></li>
+            <li><a href="game.html">Скидка</a></li>
+            </ul>
+    </section>
+
+    </header>
+    <div class="head_h1"><h1>Выиграй и получи скидку!</h1></div>
+    <div class="text">Чтобы выиграть в этой игре нужно "наехать" желтым квадратом на красные!
+        Всё очень просто - используй клавиши wasd, чтобы перемещаться и заработай 20 очков.
+    </div>
+    <div class="canvas"><canvas id="canvas"></canvas></div>
+
+    <div id="score">
+        <p>Набранные очки: <span>0</span> / 20</p>
+    </div>
+
+    
+</body>
+<footer>
+    <div class="container">
+        
+        <div class="sec quicklinks">
+            <h2>Перейти</h2>
+            <ul>
+                <li><a href="main.html">О нас</a></li>
+                <li><a href="history.html">История мороженого</a></li>
+                <li><a href="order.html">Заказ</a></li>
+                <li><a href="tastes.html">Наши вкусы</a></li>
+                <li><a href="game.html">Скидка</a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h2>Заказ</h2>
+            <ul>
+                <li><a href="order.html">Сделать заказ</a></li>
+                <li><a href="tastes.html">Наши вкусы</a></li>
+            </ul>
+        </div>
+        <div class="sec contact">
+            <h2>Связь с нами</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span>Prospekt Vernandskogo, 78<br>
+                        Moscow, Russia</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <p><a href="tel:+79009009090">+7 900 900 9090</a><br>
+                    <a href="tel:+79009009091">+7 900 900 9091</a></p>
+                </li>
+                <li>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <p><a href="mailto:icecream@gmail.com">icecream@gmail.com</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+   
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright © 2022 student MIREA. All Rights Reserved.</p>
+    </div>
+    <script src="gamejs/player.js"></script>
+<script src="gamejs/foe.js"></script>
+<script src="gamejs/canvas.js"></script>
+<script src="gamejs/index.js"></script>
+<script src="gamejs/comments.js"></script>
+</html>
