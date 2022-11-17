@@ -227,8 +227,8 @@
     .third_section{
         flex-direction: column;
     }
-      .text{
-        font-size: 14px;
+    .text{
+      font-size: 17px;
     }
   }
   .second_section{
