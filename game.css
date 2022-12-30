@@ -178,17 +178,20 @@
     border-left-color: transparent;
     border-right-color: transparent;
   }
-  @media (orientation: portrait) {
-    .head_h1 h1 {font-size: 2em;
-      margin-top: 8%;}
-    
-  }
+ 
   .text {
     padding: 60px 50px 30px 50px;
     text-align: justify;
     font-size: 30px;
     color: #247049;
     margin: 30px;
+  }
+  @media screen and (max-width: 600px) {
+    .head_h1 h1 {font-size: 2em;
+      margin-top: 8%;}
+    .text {
+      font-size: 20px;
+    }
   }
   .canvas {
     display: flex;

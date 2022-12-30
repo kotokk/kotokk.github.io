@@ -206,9 +206,6 @@ body{
   .text{
     font-size: 20px;
   }
-  .head21 {
-    font-size: 24px;
-  }
 }
 
 .wrap_all h2 {
@@ -265,14 +262,6 @@ body{
   height: 380%;
 }
 
-@media screen and (max-width: 600px)  {
-
-  .btn1 {
-    margin-top: 40px;
-    padding: .75rem 3rem;
-    font-size: 1.25rem;
-  }
-}
 .third_block{
   padding: 40px 40px 30px 50px;
   display: flex;
@@ -288,15 +277,21 @@ body{
     height: 315px;
   }
   @media screen and (max-width: 600px)  {
-    .head21{
-      font-size: 30px;
-    }
     .third_block{
       flex-direction: column;
     }
     .video iframe{
       width: 250px;
       height: 115px;
+    }
+    .wrap_all h2{
+      font-size: 28px;
+    }
+    .btn1 {
+      margin-top: 40px;
+      padding: .75rem 3rem;
+      font-size: 1rem;
+      width: 80%;
     }
   }
   footer{

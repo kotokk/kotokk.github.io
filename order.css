@@ -332,7 +332,6 @@
       .form .inputBx span {
           position: absolute;
           left: 30px;
-          padding: 10px;
           display: inline-block;
           color: #247049;
           transition: .5s;
@@ -357,6 +356,16 @@
         }
         .square{
             visibility: hidden;
+        }
+        .form .inputBx .fas{
+          padding-left: 80px;
+        }
+        .inputBx span {
+          font-size: 10px;
+          margin: 0;
+        }
+        textarea{
+          width: 100%;
         }
       }
 

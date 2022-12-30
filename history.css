@@ -181,7 +181,7 @@
     border-left-color: transparent;
     border-right-color: transparent;
   }
-  @media (orientation: portrait) {
+  @media screen and (max-width: 600px) {
     .head_h1 h1 {font-size: 2em;
       margin-top: 8%;}
     
@@ -209,27 +209,19 @@
   .first_section img{
     height: 300px;
   }
-  @media screen and (orientation: portrait) {
+  @media  screen and (max-width: 600px) {
     .first_section{
         flex-direction: column;
+        padding: 0;
     }
     .first_section img {
-        width:fit-content;
-        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
     }
-    .secwithimage {
-        flex-direction: column;
+    .image{
+      width: 320px;
     }
-    .secwithimage img{
-        width: fit-content;
-        margin: auto;
-    }
-    .third_section{
-        flex-direction: column;
-    }
-    .text{
-      font-size: 17px;
-    }
+    
   }
   .second_section{
     padding: 60px 50px 30px 50px;
@@ -249,16 +241,16 @@
   }
   .card  {
     display: inline-block;
-    width: 400px;
-    height: 550px;
+    width: 320px;
+    height: 400px;
     border: 1px solid #000;
     position: relative;
     margin: auto;
   }
   
   .card  img {
-    width: 400px;
-    height: 550px;
+    width: 320px;
+    max-height: 100%;
   }
   
   .card  .card-body {
@@ -281,6 +273,55 @@
   }
   .fourth_section{
     padding: 60px 50px 30px 50px;
+  }
+  @media  screen and (max-width: 600px) {
+    .card img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .card{
+      width: 320px;
+      margin: 0;
+      margin-top: 20px;
+      
+    }
+    .card-body{
+      width: 320px;
+      padding: 20px;
+    }
+    .head_h2 {
+      font-size: 26px;
+    }
+    .first_section .image {
+      margin-top: 20px;
+    }
+    .secwithimage {
+      margin-top: 20px;  
+      flex-direction: column;
+    }
+    .second_section{
+      padding: 0;
+    }
+    .secwithimage img{
+        width: fit-content;
+        margin: auto;
+    }
+    .third_section{
+        flex-direction: column;
+        padding: 0;
+    }
+    .text{
+      font-size: 17px;
+      margin: 0;
+      margin-top: 20px;
+    }
+    .fourth_section{
+      padding: 0;
+      margin-top: 20px;
+    }
+    .container_button{
+      width: 250px;
+    }
   }
   .container_button
 {

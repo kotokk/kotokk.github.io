@@ -408,6 +408,26 @@ height: 82%;
         height: 85%;
         }
 }
+@media screen and (max-width:600px) {
+  .full-screen{
+      width: 100%;
+  }
+  .full-screen-title{
+      font-size: 36px;
+      letter-spacing: 0;
+  }
+  .full-screen-text{
+      letter-spacing: 0;
+      text-align: center;
+  }
+  .btncat{
+      font-size: 10px;
+  }
+  .btncat:hover::after, .btncat:hover::before{
+      width: 95%;
+      height: 85%;
+      }
+}
   footer{
     position: relative;
     width: 100%;
